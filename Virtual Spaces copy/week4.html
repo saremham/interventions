@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+
+function sayHello(){
+setTimeout(function(){
+console.log("hello");
+sayCats(); 
+}, 2000);
+}
+
+function sayCats(){
+
+setTimeout(function(){
+console.log("I <3 CATS");
+sayGoodbye(); 
+}, 1000);
+
+}
+
+function sayGoodbye(){
+console.log("goodbye");
+}
+
+sayHello();
+
+
+
+</script>
+</body>
+</html>

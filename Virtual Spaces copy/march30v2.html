@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	
+	<style type="text/css">
+	
+	/* font style link */
+	@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+	/* text style */
+	.text {
+			font-family: Raleway;
+			width: 900px;
+			margin: auto;
+			text-align: center;
+			font-size: 250%;
+			color: white;
+	}
+
+	/* video positioning */
+	#video-background {
+ 		position: fixed;
+  		right: 0; 
+ 		bottom: 0;
+  		min-width: 100%; 
+ 		min-height: 100%;
+  		width: auto; 
+  		height: auto;
+  		z-index: -100;
+	}
+
+	</style>
+</head>
+
+<body>
+	<!-- link to background video. video loops, and is muted -->
+	<video autoplay loop id="video-background" muted>
+  		<source src="fatart/FatNude.mp4">
+	</video>
+
+	<!-- quote text -->
+ 	<div class = "text">
+ 		<p>'Aesthetically, fat is the antithesis of the beauty ideal of the day: tight, lean, and toned. Viewed, then, as both unhealthy and unattractive, fat people are widely represented in popular culture and in interpersonal interactions as revolting: they are agents of abhorrence and disgust.'</p><p>Kathleen LeBesco</p>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+ 		
+ 	//variables for user input. weight is asked before ideal
+ 	var weight = prompt("how much do you weigh? (in pounds)"); 
+ 	var ideal = prompt("how much do you wish you weighed?");
+ 	
+ 	// if weight is higher than ideal, alert user of the difference between the two numbers. if not, prompts user to try again 	
+ 	if (parseInt(weight) >= parseInt(ideal)) {
+ 		alert('you are ' + (weight - ideal) + " lbs away from being included as a normal member of society");
+ 	} else {
+ 		prompt("does not compute. ideal weight cannot be higher than actual weight. try again?");
+ 	}
+ 	
+</script>
+ 	
+</html>
+
