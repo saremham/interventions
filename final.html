@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	
+	<style type="text/css">
+	
+	/* font style link */
+	@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+	/* text style */
+	.tabcontent, .tab, .tablinks, .header, .subheader {
+			font-family: Raleway;
+			width: 900px;
+			margin: auto;
+			text-align: center;
+		}
+
+	.tab, .tablinks {
+		font-size: 200%;
+	}
+
+	.tabcontent {
+		font-size: 150%;
+		color: white;
+		background-color: black;
+	}
+	.header {
+		font-size: 500%;
+		color: white;
+	}
+
+	.subheader {
+		font-size: 200%;
+		color: white;
+	}
+	div.tab { 
+    	overflow: hidden;
+    	border: 1px solid #ccc;
+    	background-color: #f1f1f1;
+	}
+
+	div.tab button {
+    	background-color: inherit;
+    	float: left;
+    	border: none;
+    	outline: none;
+    	cursor: pointer;
+    	padding: 14px 16px;
+    	transition: 0.3s;
+	}
+
+	div.tab button:hover {
+    	background-color: #ddd;
+	}
+
+
+	div.tab button.active {
+    	background-color: #ccc;
+	}
+
+	
+	.tabcontent {
+   	 	display: none;
+    	padding: 6px 12px;
+   		border: 20px solid #ccc;
+	}
+
+	body {
+    	background-image: url("FatArt/fatart4.jpg");
+	}
+
+	h3 {
+		font-size: 300%;
+	}
+	</style>
+
+
+</head>
+
+<body>
+	<div class="header">
+		<p> "Does this Society Make Me Look Fat?"</p>
+	</div>
+	
+	<div class ="subheader">
+		<p> A Personal Exploration of Fatness in the United States</p>
+	</div>
+	
+	<div class="tab">
+ 	 	<button class="tablinks" onclick="openTab(event, 'About Me')">About Me</button>
+  		<button class="tablinks" onclick="openTab(event, 'Resources')">Resources</button>
+  		<button class="tablinks" onclick="openTab(event, 'My Work')">My Work</button>
+	</div>
+
+	<div id="About Me" class="tabcontent">
+  		<h3>About Me</h3>
+  		<p>For as long as I can remember, I have lived in a fat body. It is the first thing people notice about me, the blatant indicator of "wrongness" that I cannot hide. I spent years vilifying the fat on my frame, wishing for the invisibility that is a privilege born from normativity. To be thin is to fit into society, both literally and figuratively. To be fat is to stand out, claiming space that is not yours to claim. </p>
+  		<p>Eventually, I learned to live in that space. I learned to dwell in the tension between "me" and the "me I ought to be". I won't lie to you and say I don't wish to be thin. I still sometimes yearn to take up as little space as possible, curling up into myself until all that is left is a hollow shell.</p>
+  		<p>Other times, I breathe deeply and feel the fullness of my body, the weight settling on my bones. I feel the strength contained in my muscles, propelling me forward into a new paradigm of thought about the boundaries of bodies. It's a constant push-and-pull between the desire to disappear and reappear.<p> 
+  		<p>I refuse to disappear anymore.</p>
+  		<p> It takes small steps. I started by standing up straighter, talking louder, laughing more freely, smiling more often. I ran my hands over my flesh, resisting the urge to pinch and pull, tracing my bulges and curves as if caressing a lover. I met myself for the first time when I looked in the mirror and saw a person instead of a frame with excess. It took years of delving inwards, building a foundation for myself in opposition to everything I had ever known.</p>
+  		<p>Now, I want to build outwards. I want you to join me in creating a world where a body is a home, not a prison. This is not a journey that can be accomplished alone. We must lean on each other, trusting ourselves to support and embrace our weight. We must challenge the boundary that we draw on ourselves, resisting the line of "normal" that constrains our potential to fully live.</p>
+  		<p>This project is my first step in that direction. I began to reclaim my body through political theory, fueling my desire for a different way to think about fatness. I invite you to walk in my steps and carry my weight. Lift the burden of thinness from your shoulders and dare to dream of something different.</p>
+  		<img src="FatArt/me.jpg" alt="Me">
+	</div>
+
+	<div id="Resources" class="tabcontent">
+  		<h3>Resources</h3>
+  		<p>What follows is a collection of work that has influenced my own.</p>
+  		<p>Bordo, Susan. <i>Unbearable Weight: Feminism, Western Culture, and the Body</i>. Berkeley: U of California Press, 2005.</p> 
+  		<p>Braziel, Jana Evans, and Kathleen LeBesco. <i>Bodies Out of Bounds: Fatness and Transgression</i>. Berkeley, CA: U of California Press, 2001.</p>
+  		<p>Brown, Harriet. <i>Body of Truth: How Science, History, and Culture Drive Our Obsession with Weight and What We Can Do About It</i>. Da Capo, 2016.</p>
+  		<p>Mayes, Christopher. <i>The Biopolitics of Lifestyle: Foucault, Ethics and Healthy Choices</i>. New York: Routledge, Taylor & Francis Group, 2016. Print.</p>
+  		<p>Rothblum, Esther D., and Sondra Solovay. <i>The Fat Studies Reader</i>. New York: New York Unviersity Press, 2009.</p>
+
+	</div>
+
+	<div id="My Work" class="tabcontent">
+ 		<h3>My Work</h3>
+ 		<p><a href="http://www.startribune.com/body-shaming-in-america-not-fit-to-be-president/420413813/">Body-shaming in America: Not "Fit" To Be President?</a></p>
+		<p><a href="FatArt/TheSoldierandtheEnemy.pdf" download="The Soldier and the Enemy"> The Soldier and the Enemy: Fat Bodies in the United States</a>
+		
+	</div>
+</body>
+
+<script type="text/javascript">
+ // JS code copied from w3schools.com 		
+ function openTab(evt, tabName) {
+   
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}	
+</script>
+ 	
+</html>
+
